@@ -1,1 +1,62 @@
-{}
+{
+	"Button Anchor": {
+		"prefix": "pz-button-anchor",
+		"body": [
+			"{% from 'components/button-anchor/index.html' import ButtonAnchor with context %} <!-- Sayfa başına taşı -->",
+			"{{ ButtonAnchor(${1:btn_url}, ${2:btn_text}) }}",
+		],
+		"description": "PZ Button Anchor Component"
+	},
+	"Button Add To Card": {
+		"prefix": "pz-button-add-to-cart",
+		"body": [
+			"{% from 'components/button-add-to-cart/index.html' import AddToCartButton with context %} <!-- Sayfa başına taşı -->",
+			"{{ AddToCartButton(${1:pk}) }}",
+		],
+		"description": "PZ Button Add To Cart Component"
+	},
+	"Select": {
+		"prefix": "pz-select",
+		"body": [
+			"{% from 'components/select/index.html' import Select with context %} <!-- Sayfa başına taşı -->",
+			"{{ Select(${1:name}, options=${2:''}) }}",
+		],
+		"description": "PZ Select Component"
+	},
+	"Image": {
+		"prefix": "pz-image",
+		"body": [
+			"{% from 'components/image/index.html' import Image with context %} <!-- Sayfa başına taşı -->",
+			"{{ Image(${1:img_src}, ${2:img_alt}) }}",
+		],
+		"description": "PZ Image Component"
+	},
+	"Price": {
+		"prefix": "pz-price",
+		"body": [
+			"{% from 'components/price/index.html' import Price with context %} <!-- Sayfa başına taşı -->",
+			"{{ Price(${1:amount}, ${2:currency='TL'}, ${3:amountIsPrev=true}) }}",
+		],
+		"description": "PZ Price Component"
+	},
+	"LayoutLink": {
+		"prefix": "pz-layout-link",
+		"body": [
+			"{% from 'components/layout-link/index.html' import LayoutLink with context %} <!-- Sayfa başına taşı -->",
+			"{% call LayoutLink(${1:columns}) %}",
+			"\t${2:icon}",
+			"{% endcall %}"
+		],
+		"description": "PZ LayoutLink Component"
+	},
+	"PageSizeLink": {
+		"prefix": "pz-page-size-link",
+		"body": [
+			"{% from 'components/page-size-link/index.html' import PageSizeLink with context %} <!-- Sayfa başına taşı -->",
+			"{% call PageSizeLink(${1:size}) %}",
+			"\t${2:icon}",
+			"{% endcall %}"
+		],
+		"description": "PZ PageSizeLink Component"
+	}
+}
