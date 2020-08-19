@@ -1,6 +1,7 @@
 {
     "name": "project-zero-snippets",
     "displayName": "Project Zero Snippets",
+    "publisher": "boolxy",
     "description": "Save your time with project zero snippets",
     "version": "0.0.1",
     "engines": {
@@ -9,6 +10,10 @@
     "categories": [
         "Snippets"
     ],
+    "repository": {
+        "type" : "git",
+        "url" : "https://github.com/boolxy/project-zero-snippets"
+    },
     "contributes": {
         "snippets": [
             {
