@@ -63,9 +63,8 @@
 		"prefix": "pz-overlay",
 		"body": [
 			"{% from 'components/overlay/index.html' import Overlay with context %} <!-- Move to the top of the page -->",
-			"{% call Overlay(${1:class}) %}",
-			"\t${2:content}",
-			"{% endcall %}"
+			"{# Overlay wrapper's position must be relative #}",
+			"{{ Overlay(${1:class}) }}"
 		],
 		"description": "PZ Overlay Component"
 	}
